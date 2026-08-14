@@ -53,6 +53,50 @@ Thu muc build se duoc tao tai:
 dist/
 ```
 
+## Deploy len GitHub Pages
+
+Project da co san GitHub Actions workflow tai:
+
+```text
+.github/workflows/deploy.yml
+```
+
+Lam theo cac buoc sau:
+
+1. Tao repository moi tren GitHub.
+
+2. Khoi tao git trong project neu chua co:
+
+```bash
+git init
+git add .
+git commit -m "Initial e-commerce React app"
+```
+
+3. Ket noi repository GitHub:
+
+```bash
+git branch -M main
+git remote add origin https://github.com/<username>/<repository-name>.git
+git push -u origin main
+```
+
+4. Vao GitHub repository > Settings > Pages.
+
+5. O muc "Build and deployment", chon:
+
+```text
+Source: GitHub Actions
+```
+
+6. Vao tab Actions de xem workflow "Deploy to GitHub Pages" dang chay.
+
+Khi deploy xong, website se co URL dang:
+
+```text
+https://<username>.github.io/<repository-name>/
+```
+
 ## Cau truc chinh
 
 ```text
